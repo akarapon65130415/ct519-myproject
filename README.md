@@ -1,5 +1,6 @@
 # ct519-myproject
 Akarapon Lhuengaroon, ID:65130415
+
 1.สร้าง Static Web Application ด้วยโปรแกรม Visual Studio Code บน windows โดยใช้ภาษา Python และใช Service Django ในการ run service เพื่อพัฒนาหน้าเว็บไซต์ โดยมีฟังก์ชันการทำงาน คือ 
 - หน้า Home page ประกอบด้วยชื่อและ window สำหรับคลิกไปในหน้าถัดไป
 - หน้า Mybooks > เป็นหน้าต่างข้อมูลประชากร โดยสามารถเพิ่มและแก้ไขข้อมูลในหน้าเว็บได้
