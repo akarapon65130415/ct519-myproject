@@ -34,18 +34,19 @@ def form(request):
     else :
         return render(request,"form.html")
 
-def edit(request,person_id):
+def edit(request, person_id):
     if request.method == "POST":
         person = Person.objects.get(id=person_id)
         person.name = request.POST["name"]
         person.age = request.POST["age"]
         person.save()
-        messages.success(request,"อัพเดตข้อมูลเรียบร้อย")
+        messages.success(request, "อัพเดตข้อมูลเรียบร้อย")
         return redirect("/")
     else:
         # ดึงข้อมูลประชากรที่ต้องการแก้ไข
         person = Person.objects.get(id=person_id)
-        return render(request,"edit.html",{"person":person})
+        return render(request, "edit.html", {"person": person})
+
 
 def delete(request,person_id):
     person = Person.objects.get(id=person_id)

@@ -8,7 +8,7 @@
      <!-- Add a CSS temoplate -->
      <body class="blue-background">
     <h2 class="text-center">แบบฟอร์มบันทึกข้อมูลประชากร</h2>
-    <form method="post" action="form">
+    <form method="post" action="/form/">
         {% csrf_token %}
         <div class="form-group">
             <label for="name">ชื่อประชากร</label>
@@ -20,4 +20,5 @@
         </div>
         <input type="submit" value="บันทึกข้อมูล" class="btn btn-success">
     </form>
+    
 {% endblock %}
